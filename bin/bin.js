@@ -7,7 +7,7 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
-console.log(lzString.compress(fs.readFileSync(process.argv[2], {
+console.log(lzString.decompressFromUTF16(fs.readFileSync(process.argv[2], {
   encoding: 'utf8',
 })));
 
